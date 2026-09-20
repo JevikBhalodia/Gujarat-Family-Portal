@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --color-indigo: #1F2F6B;
+  --color-indigo-50: #E9ECF7;
+  --color-salt: #F6F7F9;
+  --color-surface: #FFFFFF;
+  --color-ink: #1B1F2A;
+  --color-muted: #5B6474;
+  --color-line: #D9DDE5;
+  --color-green: #1F7A4D;
+  --color-marigold: #B45F06;
+  --color-marigold-fill: #FDF0D5;
+  --color-madder: #B3372B;
+  --color-madder-fill: #FBE9E7;
+  --font-sans: 'Hind Vadodara', 'Noto Sans Gujarati', system-ui, -apple-system, sans-serif;
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-chip: 999px;
+}
+
+body {
+  font-family: 'Hind Vadodara', 'Noto Sans Gujarati', system-ui, -apple-system, sans-serif;
+  background-color: var(--salt);
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

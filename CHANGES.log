@@ -1,0 +1,21 @@
+# AUDIT LOG
+# FORMAT: [YYYY-MM-DD HH:mm] <OP> <FILE> - <SUMMARY>
+[2026-09-20 15:37] INIT dir - Created server/ (db, middleware, services, routes, uploads) and client/ (src/api, components, context, i18n, pages/family, pages/admin, public)
+[2026-09-20 15:38] DB: schema.sql - DDL for 12 tables, indexes & constraints
+[2026-09-20 15:38] DB: seed.js - 6 schemes, 2 depts, 30 families & demo users
+[2026-09-20 15:38] DB: db.js - PostgreSQL & SQLite unified driver
+[2026-09-20 15:38] MID: auth, requireRole, requireFamilyRole, requireAccess
+[2026-09-20 15:39] SRV: verifier, eligibility, apply, query, analytics, audit
+[2026-09-20 15:40] RTE: auth, me, family, schemes, applications, documents, queries, admin
+[2026-09-20 15:40] APP: server.js - Express server configuration & route mounting
+[2026-09-20 15:41] I18N: translations.js - English & Gujarati dictionaries
+[2026-09-20 15:41] CSS: index.css - Mobile-first styling & design tokens
+[2026-09-20 15:41] CTX: AuthContext & LanguageContext
+[2026-09-20 15:41] CMP: StatusBadge, ChecklistResult, Navbar, SchemeCard, ChatWidget, MemberRow, ApprovalCard
+[2026-09-20 15:42] PG_FAM: SchemesPage, ApplicationsPage, ManageFamilyPage, ProfilePage
+[2026-09-20 15:43] PG_ADM: AdminAnalytics, AdminLookup, AdminQueries
+[2026-09-20 15:43] APP: App.jsx, main.jsx, vite.config.js, index.html
+[2026-09-20 15:43] SYNC: Synchronized complete project to /Documents/Pravi/gujarat-portal/
+[2026-09-20 16:24] AUDIT: ADMIN_FAMILY_LOOKUP on families#1 by user#1 - Lookup family GJ-AHM-00101 by officer dept#1
+[2026-09-20 16:26] AUDIT: ADMIN_FAMILY_LOOKUP on families#1 by user#1 - Lookup family GJ-AHM-00101 by officer dept#1
+[2026-09-20 16:26] AUDIT: ADMIN_FAMILY_LOOKUP on families#1 by user#1 - Lookup family GJ-AHM-00101 by officer dept#1

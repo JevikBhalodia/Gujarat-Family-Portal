@@ -1,0 +1,23 @@
+:root {
+  --indigo: #1F2F6B;        /* primary: buttons, links, active nav */
+  --indigo-50: #E9ECF7;     /* selected/hover backgrounds */
+  --salt: #F6F7F9;          /* page background */
+  --surface: #FFFFFF;       /* cards, inputs */
+  --ink: #1B1F2A;           /* body text */
+  --muted: #5B6474;         /* secondary text (contrast 5.9:1 on white) */
+  --line: #D9DDE5;          /* borders */
+  --green: #1F7A4D;         /* active, eligible */
+  --marigold: #B45F06;      /* "check needed" text */
+  --marigold-fill: #FDF0D5; /* "check needed" background */
+  --madder: #B3372B;        /* revoked, errors, destructive */
+  --madder-fill: #FBE9E7;   /* revoked, error background */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-chip: 999px;
+}
+
+.stripe {
+  height: 4px;
+  background: repeating-linear-gradient(90deg,
+    var(--indigo) 0 48px, var(--madder) 48px 60px, #E59A0C 60px 68px, var(--indigo) 68px 116px);
+}

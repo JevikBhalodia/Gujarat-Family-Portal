@@ -1,0 +1,11 @@
+{
+  "name": "gujarat-family-scheme-portal",
+  "version": "1.0.0",
+  "description": "Government of Gujarat Family Scheme Portal",
+  "scripts": {
+    "server": "mvn spring-boot:run -f server/pom.xml",
+    "client": "npm run dev --prefix client",
+    "test:server": "mvn test -f server/pom.xml"
+  },
+  "keywords": ["gujarat", "schemes", "family-portal", "react", "spring-boot", "java"]
+}
