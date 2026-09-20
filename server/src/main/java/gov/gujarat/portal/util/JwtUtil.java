@@ -19,7 +19,7 @@ public class JwtUtil {
     private final long expirationMillis;
 
     public JwtUtil(
-            @Value("${app.jwt.secret}") String secret,
+            @Value("${app.jwt.secret:supersecret_gujarat_portal_key_2026_spring_boot_enterprise_jwt_salt_super_long_key_for_sha256}") String secret,
             @Value("${app.jwt.expiration-days:7}") int expirationDays
     ) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
